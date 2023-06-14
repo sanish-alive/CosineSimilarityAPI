@@ -13,7 +13,6 @@ try:
 except mysql.connector.Error as err:
 	print("[-]Database Error :: {}".format(err))
 
-
 app = Flask(__name__)
 
 @app.route('/cosine', methods = ['POST', 'GET'])
